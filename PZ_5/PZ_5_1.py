@@ -12,9 +12,6 @@ while True:
     except ValueError:
         print("Ошибка: введите целое число.")
 
-if n > m:
-    n, m = m, n
-
 total = 0
 current = n
 while current <= m:
