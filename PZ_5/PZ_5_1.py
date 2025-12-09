@@ -1,5 +1,15 @@
 #Найти сумму чисел ряда 1,2,3,4,... от числа n до числа m. Суммирование оформить функцией с параметрами.
 #Значения n и m программа должна запрашивать.
+def sum_range(n, m):
+    if n > m:
+        return 0
+    total = 0
+    current = n
+    while current <= m:
+        total += current
+        current += 1
+    return total
+
 while True:
     try:
         n = int(input("Введите первое число (n): "))
@@ -14,10 +24,5 @@ while True:
     except ValueError:
         print("Ошибка: введите целое число.")
 
-total = 0
-current = n
-while current <= m:
-    total += current
-    current += 1
-
-print(f"Сумма всех чисел от {n} до {m} = {total}")
+result = sum_range(n, m)
+print(f"Сумма чисел от {n} до {m} = {result}")
