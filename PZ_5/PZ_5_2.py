@@ -1,16 +1,14 @@
 def digitCountSum(K):
     temp = K
-    C = 0  # количество цифр
-    S = 0  # сумма цифр
+    C = 0  
+    S = 0  
     while temp > 0:
         S += temp % 10
         C += 1
         temp //= 10
     return C, S
 
-# Основная программа
 print("Введите 5 целых положительных чисел:")
-
 i = 0
 while i < 5:
     try:
