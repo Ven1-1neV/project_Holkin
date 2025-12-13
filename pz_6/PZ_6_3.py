@@ -68,3 +68,13 @@ while i < n:
         rx = bx[t] - ax[i]
         ry = by[t] - ay[i]
         dist = math.sqrt(rx * rx + ry *ry)
+        if dist < mind
+            mind = dist
+            bax, bay = ax[i], ay[i]
+            bbx, bby = bx[t], by[t]
+        t += 1
+    i += 1
+
+print(bax, bay)
+print(bbx, bby)
+print(mind)
