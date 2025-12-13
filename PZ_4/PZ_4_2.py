@@ -10,9 +10,7 @@ while type(N) != int:
         N = input('введите число')
         
 zov = N
-if N > 0:
-    print("число должно быть больше нуля")
-    end
+
 while zov > 1:
     if zov % 3 != 0:
         break
